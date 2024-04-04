@@ -1,13 +1,107 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #000;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Nav */
+.custom-nav,
+.navbar-brand {
+  font-size: 24px;
+}
+
+.custom-nav .collapse {
+  justify-content: flex-end;
+}
+/* End Nav */
+
+/* Home */
+.home {
+  margin-top: 30px;
+}
+
+.home > h2 {
+  margin-bottom: 20px;
+}
+
+.home .category {
+  margin-bottom: 20px;
+}
+
+.home .category-title {
+  margin: 10px 0;
+}
+
+/* End home */
+
+/* Login */
+.login {
+  min-height: 100vh;
+  align-items: center;
+}
+
+.login h6 {
+  margin-top: 15px;
+}
+
+/* End Login */
+
+/* Register */
+.register {
+  min-height: 100vh;
+  align-items: center;
+}
+/* End register */
+
+/* Product */
+.product-card {
+  background-color: #f8f9fa;
+}
+
+.product-card .image-wrapper {
+  height: 300px;
+  min-height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card .image-wrapper img {
+  width: auto;
+  height: 100%;
+  display: flex;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.product-card .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-card p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  color: #696969;
+}
+
+@media (max-width: 767px) {
+  .product-card {
+    margin-bottom: 15px;
+  }
 }
